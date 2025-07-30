@@ -1,0 +1,96 @@
+{
+  "id": "clock",
+  "name": "Clock",
+  "version": "1.0.0",
+  "author": "WebToys Team",
+  "description": "Display time with multiple formats, timezones, and visual themes. Supports digital, analog, and world clock modes.",
+  "icon": "🕐",
+  "githubUrl": "https://github.com/obscreen/webtoys",
+  "properties": {
+    "timezone": {
+      "type": "select",
+      "label": "Primary Timezone",
+      "defaultValue": "Europe/Paris",
+      "options": [
+        { "value": "Europe/Paris", "label": "Paris" },
+        { "value": "America/New_York", "label": "New York" },
+        { "value": "America/Los_Angeles", "label": "Los Angeles" },
+        { "value": "Asia/Tokyo", "label": "Tokyo" },
+        { "value": "Europe/London", "label": "London" },
+        { "value": "Australia/Sydney", "label": "Sydney" },
+        { "value": "Asia/Shanghai", "label": "Shanghai" },
+        { "value": "America/Chicago", "label": "Chicago" },
+        { "value": "Europe/Berlin", "label": "Berlin" },
+        { "value": "Asia/Dubai", "label": "Dubai" }
+      ],
+      "category": "content"
+    },
+    "displayMode": {
+      "type": "select",
+      "label": "Display Mode",
+      "defaultValue": "digital",
+      "options": [
+        { "value": "digital", "label": "Digital" },
+        { "value": "analog", "label": "Analog" }
+      ],
+      "category": "appearance"
+    },
+    "theme": {
+      "type": "select",
+      "label": "Theme",
+      "defaultValue": "modern",
+      "options": [
+        { "value": "modern", "label": "Modern" },
+        { "value": "dark", "label": "Dark" },
+        { "value": "neon", "label": "Neon" },
+        { "value": "minimal", "label": "Minimal" },
+        { "value": "retro", "label": "Retro" }
+      ],
+      "category": "appearance"
+    },
+    "showWorldClocks": {
+      "type": "boolean",
+      "label": "Show World Clocks",
+      "defaultValue": false,
+      "category": "content"
+    },
+    "worldTimezones": {
+      "type": "multiselect",
+      "label": "World Timezones",
+      "defaultValue": ["America/New_York", "Asia/Tokyo", "Europe/London"],
+      "options": [
+        { "value": "America/New_York", "label": "New York" },
+        { "value": "America/Los_Angeles", "label": "Los Angeles" },
+        { "value": "America/Chicago", "label": "Chicago" },
+        { "value": "Europe/London", "label": "London" },
+        { "value": "Europe/Berlin", "label": "Berlin" },
+        { "value": "Asia/Tokyo", "label": "Tokyo" },
+        { "value": "Asia/Shanghai", "label": "Shanghai" },
+        { "value": "Asia/Dubai", "label": "Dubai" },
+        { "value": "Australia/Sydney", "label": "Sydney" },
+        { "value": "America/Sao_Paulo", "label": "São Paulo" }
+      ],
+      "maxItems": 10,
+      "customRenderer": true,
+      "category": "content"
+    },
+    "showSeconds": {
+      "type": "boolean",
+      "label": "Show Seconds",
+      "defaultValue": true,
+      "category": "appearance"
+    },
+    "format24h": {
+      "type": "boolean",
+      "label": "24-Hour Format",
+      "defaultValue": true,
+      "category": "appearance"
+    },
+    "enableAnimations": {
+      "type": "boolean",
+      "label": "Enable Animations",
+      "defaultValue": true,
+      "category": "behavior"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "id": "countdown",
+  "name": "Countdown",
+  "version": "1.2.0",
+  "author": "WebToys Team",
+  "description": "A beautiful countdown timer with customizable target date and time display formats.",
+  "icon": "⏰",
+  "githubUrl": "https://github.com/obscreen/webtoys",
+  "properties": {
+    "message": {
+      "type": "textarea",
+      "label": "Custom Message",
+      "defaultValue": "",
+      "placeholder": "e.g., Time before we meet Donald Trump",
+      "category": "content"
+    },
+    "pictureUrl": {
+      "type": "text",
+      "label": "Picture URL",
+      "defaultValue": "",
+      "placeholder": "URL to an image representing the event",
+      "category": "content"
+    },
+    "targetDate": {
+      "type": "date",
+      "label": "Target Date",
+      "defaultValue": "now",
+      "category": "content"
+    },
+    "targetTime": {
+      "type": "time",
+      "label": "Target Time",
+      "defaultValue": "now+10",
+      "category": "content"
+    },
+    "showTargetInfo": {
+      "type": "boolean",
+      "label": "Show Target Info",
+      "defaultValue": true,
+      "category": "appearance"
+    },
+    "showFormat": {
+      "type": "boolean",
+      "label": "Show Labels",
+      "defaultValue": true,
+      "category": "appearance"
+    },
+    "template": {
+      "type": "select",
+      "label": "Theme",
+      "defaultValue": "modern",
+      "options": [
+        { "value": "modern", "label": "Modern Blue" },
+        { "value": "dark", "label": "Dark Theme" },
+        { "value": "sunset", "label": "Sunset Colors" },
+        { "value": "ocean", "label": "Ocean Breeze" },
+        { "value": "forest", "label": "Forest Dream" }
+      ],
+      "category": "appearance"
+    }
+  }
+}

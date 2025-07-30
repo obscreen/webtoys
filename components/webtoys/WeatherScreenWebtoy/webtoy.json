@@ -1,0 +1,36 @@
+{
+  "id": "weather-screen",
+  "name": "Weather Screen",
+  "version": "1.2.0",
+  "author": "WebToys Team",
+  "description": "Display weather information with multiple visual templates and customizable location.",
+  "icon": "🌤️",
+  "githubUrl": "https://github.com/obscreen/webtoys",
+  "properties": {
+    "location": {
+      "type": "text",
+      "label": "Location",
+      "defaultValue": "Paris, France",
+      "category": "content"
+    },
+    "template": {
+      "type": "select",
+      "label": "Visual Template",
+      "defaultValue": "modern",
+      "options": [
+        { "value": "modern", "label": "Modern Blue" },
+        { "value": "dark", "label": "Dark Theme" },
+        { "value": "sunset", "label": "Sunset Colors" },
+        { "value": "ocean", "label": "Ocean Breeze" },
+        { "value": "forest", "label": "Forest Dream" }
+      ],
+      "category": "appearance"
+    },
+    "enableAnimations": {
+      "type": "boolean",
+      "label": "Enable Animations",
+      "defaultValue": true,
+      "category": "behavior"
+    }
+  }
+}

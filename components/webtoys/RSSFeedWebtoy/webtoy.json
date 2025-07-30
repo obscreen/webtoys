@@ -1,0 +1,92 @@
+{
+  "id": "rss-feed",
+  "name": "RSS Feed",
+  "version": "1.0.0",
+  "author": "WebToys Team",
+  "description": "Display RSS feed items with customizable templates and scrolling effects. Perfect for news tickers and content feeds.",
+  "icon": "📡",
+  "githubUrl": "https://github.com/obscreen/webtoys",
+  "properties": {
+    "rssUrl": {
+      "type": "text",
+      "label": "RSS Feed URL",
+      "defaultValue": "https://feeds.bbci.co.uk/news/rss.xml",
+      "category": "content"
+    },
+    "template": {
+      "type": "textarea",
+      "label": "Display Template",
+      "defaultValue": "{{ title }} - {{ description }}",
+      "category": "content"
+    },
+    "maxItems": {
+      "type": "number",
+      "label": "Max Items",
+      "defaultValue": 5,
+      "min": 1,
+      "max": 20,
+      "category": "content"
+    },
+    "refreshInterval": {
+      "type": "range",
+      "label": "Refresh Interval",
+      "defaultValue": 300,
+      "min": 30,
+      "max": 3600,
+      "step": 30,
+      "unit": "s",
+      "category": "behavior"
+    },
+    "scrollDirection": {
+      "type": "select",
+      "label": "Scroll Direction",
+      "defaultValue": "horizontal",
+      "customRenderer": true,
+      "options": [
+        { "value": "none", "label": "No Scroll" },
+        { "value": "horizontal", "label": "Horizontal" },
+        { "value": "vertical", "label": "Vertical" }
+      ],
+      "category": "behavior"
+    },
+    "scrollSpeed": {
+      "type": "range",
+      "label": "Scroll Speed",
+      "defaultValue": 25,
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "category": "behavior"
+    },
+    "fontSize": {
+      "type": "range",
+      "label": "Font Size",
+      "defaultValue": 16,
+      "min": 2,
+      "max": 512,
+      "step": 1,
+      "unit": "px",
+      "category": "appearance"
+    },
+    "textColor": {
+      "type": "color",
+      "label": "Text Color",
+      "defaultValue": "#333333",
+      "category": "appearance"
+    },
+    "fontFamily": {
+      "type": "select",
+      "label": "Font Family",
+      "defaultValue": "Arial, sans-serif",
+      "options": [
+        { "value": "Arial, sans-serif", "label": "Arial" },
+        { "value": "Georgia, serif", "label": "Georgia" },
+        { "value": "'Times New Roman', serif", "label": "Times New Roman" },
+        { "value": "'Courier New', monospace", "label": "Courier New" },
+        { "value": "Helvetica, sans-serif", "label": "Helvetica" }
+      ],
+      "category": "appearance"
+    }
+  }
+}

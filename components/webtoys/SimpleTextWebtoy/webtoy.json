@@ -1,0 +1,83 @@
+{
+  "id": "simple-text",
+  "name": "Simple Text",
+  "version": "1.1.0",
+  "author": "WebToys Team",
+  "description": "Display customizable text with various styling options including font size, colors, alignment, and scrolling effects.",
+  "icon": "📝",
+  "githubUrl": "https://github.com/obscreen/webtoys",
+  "properties": {
+    "text": {
+      "type": "textarea",
+      "label": "Text Content",
+      "defaultValue": "Hello World!",
+      "placeholder": "Enter your text content here...",
+      "category": "content"
+    },
+    "fontFamily": {
+      "type": "select",
+      "label": "Font Family",
+      "defaultValue": "Arial, sans-serif",
+      "options": [
+        { "value": "Arial, sans-serif", "label": "Arial" },
+        { "value": "Georgia, serif", "label": "Georgia" },
+        { "value": "'Times New Roman', serif", "label": "Times New Roman" },
+        { "value": "'Courier New', monospace", "label": "Courier New" },
+        { "value": "Helvetica, sans-serif", "label": "Helvetica" },
+        { "value": "'Comic Sans MS', cursive", "label": "Comic Sans MS" },
+        { "value": "Impact, sans-serif", "label": "Impact" }
+      ],
+      "category": "appearance"
+    },
+    "fontSize": {
+      "type": "range",
+      "label": "Font Size",
+      "defaultValue": 24,
+      "min": 2,
+      "max": 512,
+      "step": 2,
+      "unit": "px",
+      "category": "appearance"
+    },
+    "textColor": {
+      "type": "color",
+      "label": "Text Color",
+      "defaultValue": "#333333",
+      "category": "appearance"
+    },
+    "textAlign": {
+      "type": "select",
+      "label": "Text Alignment",
+      "defaultValue": "center",
+      "customRenderer": true,
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "category": "appearance"
+    },
+    "scrollDirection": {
+      "type": "select",
+      "label": "Scroll Direction",
+      "defaultValue": "none",
+      "customRenderer": true,
+      "options": [
+        { "value": "none", "label": "No Scroll" },
+        { "value": "horizontal", "label": "Horizontal" },
+        { "value": "vertical", "label": "Vertical" }
+      ],
+      "category": "behavior"
+    },
+    "scrollSpeed": {
+      "type": "range",
+      "label": "Scroll Speed",
+      "defaultValue": 30,
+      "min": 1,
+      "max": 100,
+      "step": 1,
+      "unit": "%",
+      "category": "behavior"
+    }
+  }
+}
