@@ -10,7 +10,7 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178c6.svg)](https://www.typescriptlang.org/)
 [![Docker](https://img.shields.io/badge/Docker-Ready-2496ed.svg)](./Dockerfile)
 
-### 🚀 [**Use**](https://www.webtoy.io) 🚀
+### 🚀 [**Get Started**](https://www.webtoy.io) 🚀
 
 [✨ Features](#-features) • [🚀 Getting Started](#-getting-started) • [🎨 Available Webtoys](#-available-webtoys) • [🛠️ Development](#️-development) • [🐳 Docker](#-docker)
 
